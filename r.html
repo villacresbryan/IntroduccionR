@@ -356,6 +356,39 @@ div.tocify {
 <pre><code>## [1] &quot;Ecuador&quot;   &quot;Venezuela&quot; &quot;Colombia&quot;  &quot;Peru&quot;      &quot;Argentina&quot; &quot;Chile&quot;    
 ## [7] &quot;Bolivia&quot;</code></pre>
 </div>
+<div id="ejercicio-3" class="section level3">
+<h3>Ejercicio 3:</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="do">### Ejercicio3:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>Datos_pasantes <span class="ot">=</span> <span class="fu">data.frame</span>(<span class="at">num_pasantes =</span> <span class="fu">paste0</span>(<span class="st">&quot;N.pasantes&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">12</span>), <span class="at">Nombre =</span> <span class="fu">c</span>(<span class="st">&quot;Caroline&quot;</span>, <span class="st">&quot;Anderson&quot;</span>,<span class="st">&quot;Stefy&quot;</span>, <span class="st">&quot;Renato&quot;</span>, <span class="st">&quot;Jairo&quot;</span>, <span class="st">&quot;Klenyer&quot;</span>, <span class="st">&quot;Ronald&quot;</span>, <span class="st">&quot;Daniel&quot;</span>, <span class="st">&quot;Michelle&quot;</span>, <span class="st">&quot;Jaime&quot;</span>, <span class="st">&quot;Mauricio&quot;</span>, <span class="st">&quot;Bryan&quot;</span>), <span class="at">Apellido =</span> <span class="fu">c</span>(<span class="st">&quot;Rivera&quot;</span>, <span class="st">&quot;Nieto&quot;</span>, <span class="st">&quot;Perez&quot;</span>, <span class="st">&quot;Solis&quot;</span>, <span class="st">&quot;Marti&quot;</span>, <span class="st">&quot;Grefa&quot;</span>, <span class="st">&quot;Sanchez&quot;</span>, <span class="st">&quot;Villacres&quot;</span>, <span class="st">&quot;Correa&quot;</span>, <span class="st">&quot;Delgado&quot;</span>, <span class="st">&quot;Lasso&quot;</span>, <span class="st">&quot;Morales&quot;</span>), <span class="at">HORAS_Totales =</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">96</span>, <span class="dv">24</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>), <span class="at">dias_cumplidos =</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">12</span>, <span class="dv">12</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>) )</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>Datos_pasantes</span></code></pre></div>
+<pre><code>##    num_pasantes   Nombre  Apellido HORAS_Totales dias_cumplidos
+## 1   N.pasantes1 Caroline    Rivera            62              9
+## 2   N.pasantes2 Anderson     Nieto            19              4
+## 3   N.pasantes3    Stefy     Perez            79             10
+## 4   N.pasantes4   Renato     Solis             8              1
+## 5   N.pasantes5    Jairo     Marti            39             11
+## 6   N.pasantes6  Klenyer     Grefa            12             10
+## 7   N.pasantes7   Ronald   Sanchez            57              5
+## 8   N.pasantes8   Daniel Villacres            52             11
+## 9   N.pasantes9 Michelle    Correa            51              1
+## 10 N.pasantes10    Jaime   Delgado            73             12
+## 11 N.pasantes11 Mauricio     Lasso            51              7
+## 12 N.pasantes12    Bryan   Morales            23              2
+## 13  N.pasantes1 Caroline    Rivera             1              9
+## 14  N.pasantes2 Anderson     Nieto            18              4
+## 15  N.pasantes3    Stefy     Perez            60             10
+## 16  N.pasantes4   Renato     Solis            86              1
+## 17  N.pasantes5    Jairo     Marti            26             11
+## 18  N.pasantes6  Klenyer     Grefa            85             10
+## 19  N.pasantes7   Ronald   Sanchez            83              5
+## 20  N.pasantes8   Daniel Villacres            52             11
+## 21  N.pasantes9 Michelle    Correa            11              1
+## 22 N.pasantes10    Jaime   Delgado            32             12
+## 23 N.pasantes11 Mauricio     Lasso            88              7
+## 24 N.pasantes12    Bryan   Morales             1              2</code></pre>
+</div>
 </div>
 
 
