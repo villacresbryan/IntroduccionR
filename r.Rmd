@@ -1,0 +1,90 @@
+---
+title: "Rdeber"
+author: "Bryan Villacres"
+date: "26/2/2022"
+output:
+ html_document:
+    fig_height: 6
+    fight_width: 8
+    theme: journal
+    highlight: zenburn
+    toc: yes
+    toc_depht: 4
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Deber 1
+### Ejercicio 1
+
+```{r Ejercicio 1}
+# Ejercicio 1:
+
+ciudad <- "Ambato"
+
+print(ciudad)
+
+```
+
+### Ejercicio 2:
+
+
+```{r Ejerc2}
+
+# Ejercicio2:
+
+pais_andes <- c("Ecuador","Venezuela", "Colombia","Peru","Argentina","Chile","Bolivia")
+
+print(pais_andes)
+
+```
+### Ejercicio 3:
+
+```{r Ejerc3}
+
+### Ejercicio3:
+
+Datos_pasantes = data.frame(num_pasantes = paste0("N.pasantes", 1:12), Nombre = c("Caroline", "Anderson","Stefy", "Renato", "Jairo", "Klenyer", "Ronald", "Daniel", "Michelle", "Jaime", "Mauricio", "Bryan"), Apellido = c("Rivera", "Nieto", "Perez", "Solis", "Marti", "Grefa", "Sanchez", "Villacres", "Correa", "Delgado", "Lasso", "Morales"), HORAS_Totales = sample(1:96, 24, replace = TRUE), dias_cumplidos =sample(1:12, 12, replace = TRUE) )
+
+Datos_pasantes
+```
+
+
+### Ejecicio 4:
+
+* Ejecicio 4.1:
+
+```{r Ejerc41}
+
+# Ejercicio 4.1:
+
+# dataset "DNase"
+?DNase
+
+print(head(DNase, 4))
+
+cantidad_1 = subset(DNase, conc >= 0.1 & conc <= 0.2)
+
+print(cantidad_1)
+
+```
+
+```{r Ejerc42}
+
+# Ejercicio 4.2:
+
+# dataset "DNase"
+
+?DNase
+
+cantidad_2 = subset(DNase, Run != 5 & conc > 0.2 & density <= 1.0)
+
+print(cantidad_2)
+
+```
